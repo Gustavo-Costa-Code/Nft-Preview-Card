@@ -1,0 +1,142 @@
+/*Reset do CSS*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+}
+
+.clear {
+    clear: both;
+}
+
+/*Main*/
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+/*Card*/
+
+.card {
+    background-color:hsl(216, 50%, 16%);
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 40px 3px 20px hsl(217, 55%, 10%);
+}
+
+.card .info {
+    margin-bottom: 16px;
+}
+
+.card .info .img {
+    background-image: url(images/icon-view.svg);
+    background-color: hsl(178, 100%, 50%);
+    border-radius: 15px;
+    height: 280px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card .info .img img{
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card .info .img img:hover {
+    opacity: 0.4;
+    transition: 0.5s;
+}
+
+.card .info h1 {
+    font-weight: 600;
+    color: #fff;
+    font-size: 20px;
+    margin: 16px 0;
+    cursor: pointer;
+}
+
+.card .info h1:hover, .card .creator p span:hover {
+    color:hsl(178, 100%, 50%);
+    transition: 0.5s;
+}
+
+.card p {
+    color: hsl(215, 51%, 70%);
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 16px;
+}
+
+.card .info .flex {
+    color:hsl(178, 100%, 50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card .info .flex span {
+    padding-left: 3px;
+    font-size: 14px;
+    font-weight: 400;
+    vertical-align: middle;
+}
+
+.card .info .flex svg {
+    vertical-align: middle;
+}
+
+.card .info .flex div:nth-of-type(2) {
+    text-align: right;
+    color: hsl(215, 51%, 70%);
+}
+
+/*Creator*/
+
+.creator {
+    padding: 16px 0;
+    border-top: 1px solid hsl(215, 32%, 27%);
+    display: flex;
+    align-items: center;
+}
+
+.card .creator p {
+    padding-left: 10px;
+    vertical-align: middle;
+    margin-bottom: 0;
+}
+
+.card .creator p span {
+    color: #fff;
+    cursor: pointer;
+}
+
+.creator img {
+    max-width: 30px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+footer { 
+    font-size: 11px; text-align: center; 
+}
+footer p {
+     color: hsl(228, 45%, 44%); 
+}
